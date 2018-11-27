@@ -1,16 +1,17 @@
-package com.happycommunity.framework.common.dto;
+package com.happycommunity.framework.common.domain;
 
 import java.io.Serializable;
 import java.util.Date;
 
 /**
  * @author Danny
- * @Title: BaseDTO
+ * @Title: BaseDO
  * @Description:
- * @Created on 2018-11-26 15:18:06
+ * @Created on 2018-11-27 12:03:23
  */
-public class BaseDTO implements Serializable{
-    private static final long serialVersionUID = 5231134212346077681L;
+public class BaseDO implements Serializable {
+
+    private static final long serialVersionUID = 3077588853434604698L;
 
     private long id;
 
@@ -28,7 +29,7 @@ public class BaseDTO implements Serializable{
         return id;
     }
 
-    public BaseDTO setId(long id) {
+    public BaseDO setId(long id) {
         this.id = id;
         return this;
     }
@@ -37,7 +38,7 @@ public class BaseDTO implements Serializable{
         return createTime;
     }
 
-    public BaseDTO setCreateTime(Date createTime) {
+    public BaseDO setCreateTime(Date createTime) {
         this.createTime = createTime;
         return this;
     }
@@ -46,7 +47,7 @@ public class BaseDTO implements Serializable{
         return updateTime;
     }
 
-    public BaseDTO setUpdateTime(Date updateTime) {
+    public BaseDO setUpdateTime(Date updateTime) {
         this.updateTime = updateTime;
         return this;
     }
@@ -55,8 +56,9 @@ public class BaseDTO implements Serializable{
         return comment;
     }
 
-    public BaseDTO setComment(String comment) {
+    public BaseDO setComment(String comment) {
         this.comment = comment;
         return this;
     }
 }
+
