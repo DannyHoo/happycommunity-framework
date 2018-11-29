@@ -1,4 +1,4 @@
-package com.happycommunity.framework.common.dto;
+package com.happycommunity.framework.common.model.dto;
 
 import java.io.Serializable;
 import java.util.Date;
@@ -12,7 +12,7 @@ import java.util.Date;
 public class BaseDTO implements Serializable{
     private static final long serialVersionUID = 5231134212346077681L;
 
-    private long id;
+    private Long id;
 
     private Date createTime;
 
@@ -20,15 +20,11 @@ public class BaseDTO implements Serializable{
 
     private String comment;
 
-    public static long getSerialVersionUID() {
-        return serialVersionUID;
-    }
-
-    public long getId() {
+    public Long getId() {
         return id;
     }
 
-    public BaseDTO setId(long id) {
+    public BaseDTO setId(Long id) {
         this.id = id;
         return this;
     }

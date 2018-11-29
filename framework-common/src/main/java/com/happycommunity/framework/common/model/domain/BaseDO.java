@@ -1,4 +1,4 @@
-package com.happycommunity.framework.common.domain;
+package com.happycommunity.framework.common.model.domain;
 
 import java.io.Serializable;
 import java.util.Date;
@@ -13,7 +13,7 @@ public class BaseDO implements Serializable {
 
     private static final long serialVersionUID = 3077588853434604698L;
 
-    private long id;
+    private Long id;
 
     private Date createTime;
 
@@ -21,15 +21,11 @@ public class BaseDO implements Serializable {
 
     private String comment;
 
-    public static long getSerialVersionUID() {
-        return serialVersionUID;
-    }
-
-    public long getId() {
+    public Long getId() {
         return id;
     }
 
-    public BaseDO setId(long id) {
+    public BaseDO setId(Long id) {
         this.id = id;
         return this;
     }
@@ -60,5 +56,6 @@ public class BaseDO implements Serializable {
         this.comment = comment;
         return this;
     }
+
 }
 

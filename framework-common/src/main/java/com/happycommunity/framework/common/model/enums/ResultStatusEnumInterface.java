@@ -1,4 +1,4 @@
-package com.happycommunity.framework.core.model.enums;
+package com.happycommunity.framework.common.model.enums;
 
 /**
  * @author Danny

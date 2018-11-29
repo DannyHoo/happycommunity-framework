@@ -18,31 +18,49 @@
     <description>framework</description>
 
     <properties>
+        <framework.version>0.0.1-SNAPSHOT</framework.version>
+
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
         <spring_version>4.2.5.RELEASE</spring_version>
-        <!--<zkclient.version>0.10</zkclient.version>-->
+        <zkclient.version>0.7</zkclient.version>
 
     </properties>
 
-    <dependencies>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-context</artifactId>
-            <version>${spring_version}</version>
-        </dependency>
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.happycommunity.framework</groupId>
+                <artifactId>framework-core</artifactId>
+                <version>${framework.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.happycommunity.framework</groupId>
+                <artifactId>framework-common</artifactId>
+                <version>${framework.version}</version>
+            </dependency>
 
-        <!-- zookeeper的客户端依赖 -->
-        <!--<dependency>
-            <groupId>com.101tec</groupId>
-            <artifactId>zkclient</artifactId>
-            <version>${zkclient.version}</version>
-        </dependency>-->
-    </dependencies>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-context</artifactId>
+                <version>${spring_version}</version>
+            </dependency>
 
-    <build>
+            <!-- zookeeper的客户端依赖 -->
+            <dependency>
+                <groupId>com.101tec</groupId>
+                <artifactId>zkclient</artifactId>
+                <version>${zkclient.version}</version>
+            </dependency>
 
-    </build>
+            <!-- ******************************************* 工具 ****************************************** -->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>1.2.51</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
 </project>

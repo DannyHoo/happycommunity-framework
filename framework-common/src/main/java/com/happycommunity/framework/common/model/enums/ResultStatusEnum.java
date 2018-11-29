@@ -1,4 +1,4 @@
-package com.happycommunity.framework.core.model.enums;
+package com.happycommunity.framework.common.model.enums;
 
 /**
  * @author Danny
@@ -6,7 +6,7 @@ package com.happycommunity.framework.core.model.enums;
  * @Description:
  * @Created on 2018-11-23 16:42:53
  */
-public enum  ResultStatusEnum implements  ResultStatusEnumInterface{
+public enum  ResultStatusEnum implements ResultStatusEnumInterface {
 
     //10开头为系统类型
     SUCCESS(100000, "处理成功"),

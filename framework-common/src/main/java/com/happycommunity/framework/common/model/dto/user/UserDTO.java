@@ -1,6 +1,6 @@
-package com.happycommunity.framework.common.dto.user;
+package com.happycommunity.framework.common.model.dto.user;
 
-import com.happycommunity.framework.common.dto.BaseDTO;
+import com.happycommunity.framework.common.model.dto.BaseDTO;
 
 /**
  * @author Danny
@@ -11,8 +11,11 @@ import com.happycommunity.framework.common.dto.BaseDTO;
 public class UserDTO extends BaseDTO{
     private String userName;
     private String mobileNo;
+    private String salt;
     private String password;
     private String email;
+    private String realName;
+    private String idCardNo;
 
     public String getUserName() {
         return userName;
@@ -47,6 +50,33 @@ public class UserDTO extends BaseDTO{
 
     public UserDTO setEmail(String email) {
         this.email = email;
+        return this;
+    }
+
+    public String getSalt() {
+        return salt;
+    }
+
+    public UserDTO setSalt(String salt) {
+        this.salt = salt;
+        return this;
+    }
+
+    public String getRealName() {
+        return realName;
+    }
+
+    public UserDTO setRealName(String realName) {
+        this.realName = realName;
+        return this;
+    }
+
+    public String getIdCardNo() {
+        return idCardNo;
+    }
+
+    public UserDTO setIdCardNo(String idCardNo) {
+        this.idCardNo = idCardNo;
         return this;
     }
 }
