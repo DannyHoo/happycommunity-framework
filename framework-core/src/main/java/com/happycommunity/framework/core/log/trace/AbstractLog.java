@@ -1,5 +1,6 @@
 package com.happycommunity.framework.core.log.trace;
 
+import com.happycommunity.framework.common.model.model.GlobalTraceData;
 import com.happycommunity.framework.core.log.logger.CommonLogger;
 import com.happycommunity.framework.core.log.logger.CommonLoggerFactory;
 import com.happycommunity.framework.core.util.ExceptionUtils;
@@ -28,6 +29,7 @@ public class AbstractLog {
         }
         return globalTraceData;
     }
+
 
     /**
      * 业务id

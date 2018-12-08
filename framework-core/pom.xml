@@ -22,6 +22,15 @@
             <groupId>com.101tec</groupId>
             <artifactId>zkclient</artifactId>
         </dependency>
+        <!--zookeeper客户端相关的curator依赖-->
+        <dependency>
+            <groupId>org.apache.curator</groupId>
+            <artifactId>curator-framework</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.curator</groupId>
+            <artifactId>curator-recipes</artifactId>
+        </dependency>
         <!-- ******************************************* 工具 ****************************************** -->
         <dependency>
             <groupId>com.alibaba</groupId>

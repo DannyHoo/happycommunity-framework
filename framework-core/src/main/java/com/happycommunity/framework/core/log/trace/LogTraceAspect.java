@@ -2,12 +2,11 @@ package com.happycommunity.framework.core.log.trace;
 
 import com.alibaba.fastjson.JSON;
 import com.google.gson.Gson;
+import com.happycommunity.framework.common.model.model.GlobalTraceData;
 import com.happycommunity.framework.core.log.enums.LogAlarmTypeEnum;
 import com.happycommunity.framework.core.log.enums.LogCategoryEnum;
 import com.happycommunity.framework.core.log.enums.MethodLogKeysEnum;
 import com.happycommunity.framework.core.log.enums.ResultTypeEnum;
-import com.happycommunity.framework.core.log.logger.CommonLogger;
-import com.happycommunity.framework.core.log.logger.CommonLoggerFactory;
 import com.happycommunity.framework.core.util.DateUtils;
 import com.happycommunity.framework.core.util.StringJsonHandler;
 import org.apache.commons.lang3.StringUtils;

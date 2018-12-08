@@ -1,7 +1,5 @@
-package com.happycommunity.framework.core.log.trace;
+package com.happycommunity.framework.common.model.model;
 
-
-import com.happycommunity.framework.common.model.model.BaseModel;
 
 /**
  * @author dannyhoo
@@ -11,25 +9,53 @@ import com.happycommunity.framework.common.model.model.BaseModel;
  */
 public class GlobalTraceData extends BaseModel {
 
-    /** 一次请求的唯一标识**/
+    /**
+     * 一次请求的唯一标识
+     **/
     private String gRequestId;
-    /** 用户业务id **/
+    /**
+     * 用户业务id
+     **/
     private String gBusinessId;
-    /** 请求的设备id **/
+    /**
+     * 请求的设备id
+     **/
     private String gDeviceId;
-    /** 请求来源 **/
+    /**
+     * 请求来源
+     **/
     private String gRequestSource;
-    /** 请求的userAgent **/
+    /**
+     * 请求的userAgent
+     **/
     private String gUserAgent;
-    /** 请求url**/
+    /**
+     * 请求url
+     **/
     private String gRequestUrl;
-    /** 请求ip **/
+    /**
+     * 请求ip
+     **/
     private String gRequestIp;
-    /** 客户端app版本号 **/
+    /**
+     * 客户端app版本号
+     **/
     private String gAppClientVersion;
 
-    public static GlobalTraceData newInstance(){
+    public static GlobalTraceData newInstance() {
         return new GlobalTraceData();
+    }
+
+    public GlobalTraceData copyProperties(GlobalTraceData globalTraceData) {
+        if (globalTraceData == null) return this;
+        return this.setgRequestId(globalTraceData.getgRequestId())
+                .setgBusinessId(globalTraceData.getgBusinessId())
+                .setgDeviceId(globalTraceData.getgDeviceId())
+                .setgRequestSource(globalTraceData.getgRequestSource())
+                .setgUserAgent(globalTraceData.getgUserAgent())
+                .setgRequestUrl(globalTraceData.getgRequestUrl())
+                .setgRequestIp(globalTraceData.getgRequestIp())
+                .setgAppClientVersion(globalTraceData.getgAppClientVersion());
     }
 
     public String getgRequestId() {
