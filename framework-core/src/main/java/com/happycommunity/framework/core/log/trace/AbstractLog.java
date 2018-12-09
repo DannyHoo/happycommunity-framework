@@ -94,6 +94,7 @@ public class AbstractLog {
     }
 
     public void setLogger(String name) {
-        commonLogger=CommonLoggerFactory.getCommonLogger(name);
+        commonLogger = CommonLoggerFactory.getCommonLogger(name);
     }
+
 }
