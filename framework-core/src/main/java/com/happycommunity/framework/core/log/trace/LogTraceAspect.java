@@ -406,10 +406,10 @@ public class LogTraceAspect extends AbstractLog {
             if (arg == null) {
                 continue;
             }
-            if (arg instanceof GlobalTraceData) {
+            /*if (arg instanceof GlobalTraceData) {
                 setGlobalTraceData((GlobalTraceData) arg, joinPoint);//把参数中的信息放到本线程的GlobalTraceData中
                 args[i] = arg;
-            }
+            }*/
         }
         return args;
     }
